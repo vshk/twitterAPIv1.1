@@ -6,15 +6,15 @@
 
 //  Configure your OAuth settings from your application at https://dev.twitter.com/apps
 
-define('YOUR_CONSUMER_KEY', 'wA8FvUBnvIGSgayCzJJQCQ');
-define('YOUR_CONSUMER_SECRET', 'CVhNQKkyJv12NnJgoZwv43JPxihgowqCyStneGKYQ');
+define('YOUR_CONSUMER_KEY', 'your key');
+define('YOUR_CONSUMER_SECRET', 'your secret');
 
 
 // Configure authentication credentials.
 // you can generate your own access key from the link above
 
-define('SOME_ACCESS_KEY', '1524280286-OYBwm2OJdnjZCqO6TOC0ZUs3enb4EbPkMIH1wPT');
-define('SOME_ACCESS_SECRET', 'FcafRNVZAo2DMUd230oIEGvad8B7fQ5cuIhqKz0g'); 
+define('SOME_ACCESS_KEY', 'your access key');
+define('SOME_ACCESS_SECRET', 'your access secret'); 
   
  
 // Require client library and authorize an instance with your creds
