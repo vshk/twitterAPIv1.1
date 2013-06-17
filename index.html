@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+	<head>
+		
+		<!-- Basic Page Needs
+		================================================== -->
+		<meta charset="utf-8">
+		<title>Twitter API v1.1</title>
+		<meta name="description" content="Twitter API v1.1">
+		<meta name="author" content="vipin tanna">
+	</head>
+	<body>
+		
+		<div id="contetnContainer" class="container">
+			
+			<div class="leftColumn five columns">
+				<section id="latestTweets">
+					<header>
+						<h2>Latest Tweets</h2> <input type="text" id="twitterUsername" placeholder="Enter Twitter Username..." style="width: 79%;padding: 10px;border-radius: 5px;"> <button onclick="loadTweets();" style="padding: 10px;  border-radius: 5px;"> Get Tweets </button>
+					</header>
+					<div class="twitterFeed clearfix">
+					</div>
+				</section><!-- latest tweets --> 
+			</div><!-- end of left column -->
+			
+			
+		</div><!-- end of content container -->
+		
+		
+		<!-- JS
+		================================================== --> 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> 
+		<script src="jquery.tweet.js"></script> 
+		<script>
+			function loadTweets()
+			{
+				$(".twitterFeed").tweet({
+					join_text: "auto",
+					username: $('#twitterUsername').val(),
+					avatar_size: 0,
+					count: 20,
+					loading_text: "loading tweets..."
+				});
+			}
+		</script>
+		<!-- End Document
+		================================================== -->
+	</body>
+</html>
